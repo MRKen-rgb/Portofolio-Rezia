@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezia | Gaming Video Editor</title>
+  <meta name="description"
+    content="Portofolio Rezia: edit klip game momen lucu dengan selipan meme dan efek glitch ala video .exe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="rezia_body">
+
+  <div id="rezia_progress"></div>
+  <div class="rezia_scanlines" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header id="rezia_header">
+    <nav class="rezia_nav">
+      <a href="#rezia_home" class="rezia_logo">Rezia<span>.exe</span></a>
+
+      <ul class="rezia_menu" id="rezia_menu">
+        <li><a href="#rezia_home" class="rezia_menu_link">Home</a></li>
+        <li><a href="#rezia_about" class="rezia_menu_link">About</a></li>
+        <li><a href="#rezia_showreel" class="rezia_menu_link">Best Of</a></li>
+        <li><a href="#rezia_projects" class="rezia_menu_link">Klip</a></li>
+        <li><a href="#rezia_skills" class="rezia_menu_link">Skills</a></li>
+        <li><a href="#rezia_process" class="rezia_menu_link">Proses</a></li>
+        <li><a href="#rezia_contact" class="rezia_menu_link">Contact</a></li>
+      </ul>
+
+      <div class="rezia_nav_actions">
+        <button id="rezia_theme_btn" class="rezia_icon_btn" aria-label="Ganti tema">🌙</button>
+        <button id="rezia_burger" class="rezia_icon_btn rezia_burger" aria-label="Buka menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== 1. HOME ===== -->
+    <section id="rezia_home" class="rezia_section rezia_hero">
+      <div class="rezia_container rezia_hero_grid">
+        <div class="rezia_hero_text">
+          <p class="rezia_eyebrow">&gt; Gaming Video Editor • Funny Moments</p>
+          <h1 class="rezia_title">Halo, saya <span class="rezia_glitch" data-text="Rezia">Rezia</span></h1>
+          <p class="rezia_typed_line">Saya edit <span id="rezia_typed"></span><span class="rezia_cursor">_</span></p>
+          <p class="rezia_lead">Klip game yang gagal total, momen kocak, dan plot twist yang tidak disangka, ditambah
+            selipan meme dan efek glitch supaya makin absurd.</p>
+          <div class="rezia_btn_row">
+            <a href="#rezia_projects" class="rezia_btn rezia_btn_primary">Tonton Klip</a>
+            <button type="button" id="rezia_exe_btn" class="rezia_btn rezia_btn_ghost">⚠ Jangan Diklik</button>
+          </div>
+        </div>
+
+        <div class="rezia_hero_visual rezia_reveal" aria-hidden="true">
+          <div class="rezia_timeline">
+            <div class="rezia_tl_head">
+              <span></span><span></span><span></span>
+              <b>REC ● 00:00:12:08</b>
+            </div>
+            <div class="rezia_tl_label">GAMEPLAY</div>
+            <div class="rezia_tl_track"><i style="--l:3%;--w:28%"></i><i style="--l:34%;--w:20%"></i><i
+                style="--l:57%;--w:36%"></i></div>
+            <div class="rezia_tl_label">MEME INSERT</div>
+            <div class="rezia_tl_track rezia_tl_alt">
+              <em style="--l:30%">💀</em><em style="--l:52%">😭</em><em style="--l:74%">🗿</em>
+            </div>
+            <div class="rezia_tl_label">SFX / BASS BOOST</div>
+            <div class="rezia_tl_track rezia_tl_audio"><i style="--l:0%;--w:92%"></i></div>
+            <div class="rezia_playhead"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. ABOUT ===== -->
+    <section id="rezia_about" class="rezia_section">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Tentang <span class="rezia_gradient_text">Saya</span></h2>
+        <div class="rezia_about_grid">
+          <div class="rezia_about_photo rezia_reveal">
+            <img src="img/profile.png" alt="Foto profil Rezia" class="rezia_profile_img">
+            <p class="rezia_caption">Rezia • Gaming Video Editor</p>
+          </div>
+          <div class="rezia_about_text rezia_reveal">
+            <p>Saya Rezia. Saya mengedit klip game, khususnya momen lucu: kematian konyol, bug aneh, teman yang
+              mengkhianati di detik terakhir, sampai kejadian yang bikin teriak "KOK BISA?!".</p>
+            <p>Gaya editan saya ala video <b>.exe</b>: cepat, absurd, penuh glitch, zoom mendadak, dan selipan foto atau
+              video meme di momen yang tepat. Tujuannya satu, penonton ketawa dalam 10 detik pertama.</p>
+            <div class="rezia_stats">
+              <div class="rezia_stat"><strong class="rezia_count" data-target="6">0</strong><span>Klip diedit</span>
+              </div>
+              <div class="rezia_stat"><strong class="rezia_count" data-target="50">0</strong><span>Meme dipakai</span>
+              </div>
+              <div class="rezia_stat"><strong class="rezia_count" data-target="2">0</strong><span>Tahun mengedit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. SHOWREEL ===== -->
+    <section id="rezia_showreel" class="rezia_section rezia_alt_bg">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Best <span class="rezia_gradient_text">Of</span></h2>
+        <p class="rezia_section_sub rezia_reveal">Video pilihan: hasil pertamaku mengedit di Premiere Pro.</p>
+
+        <div class="rezia_showreel_frame rezia_reveal">
+          <div class="rezia_reel_poster"
+            style="background-image:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url(img/premiere-pertama.jpg);background-size:cover;background-position:center">
+            <button class="rezia_play rezia_play_big" data-video="video/premiere-pertama.mp4"
+              data-title="Best Of: Edit Pertama di Premiere Pro" aria-label="Putar video Best Of">▶</button>
+            <span class="rezia_reel_tag">BEST OF • EDIT PERTAMA DI PREMIERE PRO</span>
+            <span class="rezia_reel_rec">● REC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. PROJECTS ===== -->
+    <section id="rezia_projects" class="rezia_section">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Klip <span class="rezia_gradient_text">Pilihan</span></h2>
+        <p class="rezia_section_sub rezia_reveal">Perjalanan belajar mengedit, dari Alight Motion sampai Premiere Pro.
+          Klik kartu untuk memutar.</p>
+
+        <div class="rezia_filters rezia_reveal" id="rezia_filters">
+          <button class="rezia_filter_btn rezia_active" data-filter="all">Semua</button>
+          <button class="rezia_filter_btn" data-filter="premiere">Premiere Pro</button>
+          <button class="rezia_filter_btn" data-filter="alight">Alight Motion</button>
+        </div>
+
+        <div class="rezia_grid" id="rezia_grid">
+          <article class="rezia_card rezia_reveal" data-category="premiere">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/premiere-pertama.jpg)"
+              data-video="video/premiere-pertama.mp4" data-title="Edit Pertama di Premiere Pro"
+              aria-label="Putar Edit Pertama di Premiere Pro"><span class="rezia_dur">01:17</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Premiere Pro</span>
+              <h3>Edit Pertama di Premiere Pro</h3>
+              <p>Pertama kali mengedit klip game co-op di Premiere Pro, dengan potongan yang lebih rapi.</p>
+            </div>
+          </article>
+
+          <article class="rezia_card rezia_reveal" data-category="premiere">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/premiere-kedua.jpg)"
+              data-video="video/premiere-kedua.mp4" data-title="Edit Kedua di Premiere Pro"
+              aria-label="Putar Edit Kedua di Premiere Pro"><span class="rezia_dur">01:34</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Premiere Pro</span>
+              <h3>Edit Kedua di Premiere Pro</h3>
+              <p>Klip berburu monster di dunia bersalju, edit kedua di Premiere Pro.</p>
+            </div>
+          </article>
+
+          <article class="rezia_card rezia_reveal" data-category="alight">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/edit-ketiga.jpg)"
+              data-video="video/edit-ketiga.mp4" data-title="Edit Ketiga" aria-label="Putar Edit Ketiga"><span
+                class="rezia_dur">01:52</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Alight Motion</span>
+              <h3>Edit Ketiga</h3>
+              <p>Klip game co-op dengan momen kocak, makin paham timing potongan dan efek.</p>
+            </div>
+          </article>
+
+          <article class="rezia_card rezia_reveal" data-category="alight">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/edit-kedua.jpg)"
+              data-video="video/edit-kedua.mp4" data-title="Edit Kedua" aria-label="Putar Edit Kedua"><span
+                class="rezia_dur">03:08</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Alight Motion</span>
+              <h3>Edit Kedua</h3>
+              <p>Klip game survival di hutan, latihan menyusun cerita dari rekaman panjang.</p>
+            </div>
+          </article>
+
+          <article class="rezia_card rezia_reveal" data-category="alight">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/alight-pertama.jpg)"
+              data-video="video/alight-pertama.mp4" data-title="Edit Pertamaku (Alight Motion)"
+              aria-label="Putar Edit Pertamaku (Alight Motion)"><span class="rezia_dur">02:41</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Alight Motion</span>
+              <h3>Edit Pertamaku (Alight Motion)</h3>
+              <p>Percobaan pertama mengedit klip game, lengkap dengan selipan meme.</p>
+            </div>
+          </article>
+
+          <article class="rezia_card rezia_reveal" data-category="alight">
+            <button class="rezia_thumb rezia_play" style="background-image:url(img/alight-terakhir.jpg)"
+              data-video="video/alight-terakhir.mp4" data-title="Edit Terakhir di Alight Motion"
+              aria-label="Putar Edit Terakhir di Alight Motion"><span class="rezia_dur">02:01</span></button>
+            <div class="rezia_card_body">
+              <span class="rezia_tag">Alight Motion</span>
+              <h3>Edit Terakhir di Alight Motion</h3>
+              <p>Klip battle royale mobile, karya terakhir sebelum pindah ke Premiere Pro.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. SKILLS ===== -->
+    <section id="rezia_skills" class="rezia_section rezia_alt_bg">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Skills &amp; <span class="rezia_gradient_text">Tools</span></h2>
+        <div class="rezia_skills_grid">
+          <div class="rezia_skill_list rezia_reveal">
+            <div class="rezia_skill">
+              <div class="rezia_skill_top"><span>Adobe Premiere Pro <small class="rezia_note">(software
+                    utama)</small></span><em>80%</em></div>
+              <div class="rezia_bar">
+                <div class="rezia_bar_fill" data-level="80"></div>
+              </div>
+            </div>
+            <div class="rezia_skill">
+              <div class="rezia_skill_top"><span>Alight Motion <small class="rezia_note">(dulu, sudah tidak
+                    dipakai)</small></span><em>60%</em></div>
+              <div class="rezia_bar">
+                <div class="rezia_bar_fill rezia_bar_old" data-level="60"></div>
+              </div>
+            </div>
+            <div class="rezia_skill">
+              <div class="rezia_skill_top"><span>Timing Meme &amp; SFX</span><em>85%</em></div>
+              <div class="rezia_bar">
+                <div class="rezia_bar_fill" data-level="85"></div>
+              </div>
+            </div>
+            <div class="rezia_skill">
+              <div class="rezia_skill_top"><span>Efek Glitch &amp; Transisi</span><em>65%</em></div>
+              <div class="rezia_bar">
+                <div class="rezia_bar_fill" data-level="65"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rezia_chips rezia_reveal">
+            <span class="rezia_chip">Zoom Punch</span>
+            <span class="rezia_chip">Freeze Frame</span>
+            <span class="rezia_chip">Bass Boost</span>
+            <span class="rezia_chip">Deep Fry</span>
+            <span class="rezia_chip">Glitch Effect</span>
+            <span class="rezia_chip">Sync Beat</span>
+            <span class="rezia_chip">Subtitle Lucu</span>
+            <span class="rezia_chip">Sisip Meme</span>
+            <span class="rezia_chip">Jump Cut</span>
+            <span class="rezia_chip">Sound Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. PROSES ===== -->
+    <section id="rezia_process" class="rezia_section">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Behind the <span class="rezia_gradient_text">Edit</span></h2>
+        <p class="rezia_section_sub rezia_reveal">Geser slider untuk membandingkan klip mentah dan hasil edit, lalu coba
+          tempel meme di sisi EDIT.</p>
+
+        <div class="rezia_ba rezia_reveal" id="rezia_ba">
+          <div class="rezia_ba_layer rezia_ba_after">
+            <div class="rezia_scene rezia_scene_edit"></div>
+            <div class="rezia_subtitle">"gampang kok" 🗿</div>
+            <div class="rezia_stickers" id="rezia_stickers"></div>
+            <span class="rezia_ba_label rezia_right">EDIT</span>
+          </div>
+          <div class="rezia_ba_layer rezia_ba_before" id="rezia_ba_before">
+            <div class="rezia_scene rezia_raw"></div>
+            <span class="rezia_ba_label">RAW</span>
+          </div>
+          <div class="rezia_ba_handle" id="rezia_ba_handle"></div>
+          <input type="range" min="0" max="100" value="50" class="rezia_ba_range" id="rezia_ba_range"
+            aria-label="Slider before after">
+        </div>
+
+        <div class="rezia_meme_tray rezia_reveal">
+          <span class="rezia_tray_label">Meme Stash:</span>
+          <button type="button" class="rezia_sticker_btn" data-sticker="💀">💀</button>
+          <button type="button" class="rezia_sticker_btn" data-sticker="😭">😭</button>
+          <button type="button" class="rezia_sticker_btn" data-sticker="🗿">🗿</button>
+          <button type="button" class="rezia_sticker_btn" data-sticker="BRUH">BRUH</button>
+          <button type="button" class="rezia_sticker_btn" data-sticker="SKILL ISSUE">SKILL ISSUE</button>
+          <button type="button" class="rezia_sticker_btn" data-sticker="WASTED">WASTED</button>
+          <button type="button" class="rezia_sticker_btn rezia_clear" id="rezia_clear_stickers">Hapus semua</button>
+        </div>
+
+        <div class="rezia_steps">
+          <div class="rezia_step rezia_reveal"><b>01</b>
+            <h3>Rekam &amp; Cari Momen</h3>
+            <p>Tonton ulang rekaman, tandai detik yang paling lucu atau paling gagal.</p>
+          </div>
+          <div class="rezia_step rezia_reveal"><b>02</b>
+            <h3>Potong &amp; Zoom</h3>
+            <p>Buang bagian membosankan, beri zoom dan freeze frame di reaksi.</p>
+          </div>
+          <div class="rezia_step rezia_reveal"><b>03</b>
+            <h3>Sisip Meme</h3>
+            <p>Pasang foto atau video meme dengan timing tepat di punchline.</p>
+          </div>
+          <div class="rezia_step rezia_reveal"><b>04</b>
+            <h3>SFX &amp; Glitch</h3>
+            <p>Tambah sound effect, bass boost, glitch, lalu render.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. CONTACT ===== -->
+    <section id="rezia_contact" class="rezia_section rezia_alt_bg">
+      <div class="rezia_container">
+        <h2 class="rezia_section_title rezia_reveal">Hubungi <span class="rezia_gradient_text">Saya</span></h2>
+        <p class="rezia_section_sub rezia_reveal">Mau klipmu diedit jadi lucu? Kirim pesan lewat form ini.</p>
+
+        <div class="rezia_contact_grid">
+          <form id="rezia_form" class="rezia_form rezia_reveal" novalidate>
+            <div class="rezia_field">
+              <label for="rezia_name">Nama</label>
+              <input type="text" id="rezia_name" name="nama" placeholder="Nama kamu">
+              <small class="rezia_error" id="rezia_err_name"></small>
+            </div>
+            <div class="rezia_field">
+              <label for="rezia_email">Email</label>
+              <input type="email" id="rezia_email" name="email" placeholder="nama@email.com">
+              <small class="rezia_error" id="rezia_err_email"></small>
+            </div>
+            <div class="rezia_field">
+              <label for="rezia_subject">Subjek</label>
+              <input type="text" id="rezia_subject" name="subjek" placeholder="Tentang apa?">
+              <small class="rezia_error" id="rezia_err_subject"></small>
+            </div>
+            <div class="rezia_field">
+              <label for="rezia_message">Pesan</label>
+              <textarea id="rezia_message" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..."
+                maxlength="500"></textarea>
+              <small class="rezia_counter" id="rezia_msg_count">0 / 500</small>
+              <small class="rezia_error" id="rezia_err_message"></small>
+            </div>
+            <button type="submit" class="rezia_btn rezia_btn_primary rezia_full">Kirim Pesan</button>
+            <p class="rezia_form_status" id="rezia_form_status" role="status"></p>
+          </form>
+
+          <aside class="rezia_info rezia_reveal">
+            <h3>Info Kontak</h3>
+            <ul>
+              <li>📧 mohreziarahmatuloh@gmail.com</li>
+              <li>🎮 Game favorit: Monster Hunter</li>
+              <li>🎬 Open untuk edit klip game</li>
+            </ul>
+            <div class="rezia_socials">
+              <a href="https://www.youtube.com/@Ambatuken1" target="_blank" rel="noopener"
+                class="rezia_social">YouTube</a>
+              <a href="https://www.tiktok.com/@ambatuken1" target="_blank" rel="noopener"
+                class="rezia_social">TikTok</a>
+              <a href="https://www.instagram.com/kennnnaaannnn/" target="_blank" rel="noopener"
+                class="rezia_social">Instagram</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="rezia_footer">
+    <p>© 2026 Rezia.exe • Dibuat dengan HTML, CSS, dan JavaScript.</p>
+  </footer>
+
+  <button id="rezia_top" class="rezia_top" aria-label="Kembali ke atas">↑</button>
+
+  <!-- ===== LIGHTBOX VIDEO ===== -->
+  <div id="rezia_lightbox" class="rezia_lightbox" aria-hidden="true">
+    <div class="rezia_lightbox_box">
+      <button id="rezia_lightbox_close" class="rezia_lightbox_close" aria-label="Tutup">✕</button>
+      <h3 id="rezia_lightbox_title"></h3>
+      <div id="rezia_lightbox_body" class="rezia_lightbox_body"></div>
+    </div>
+  </div>
+
+  <!-- ===== POPUP ERROR PALSU (.exe) ===== -->
+  <div id="rezia_exe" class="rezia_exe" aria-hidden="true">
+    <div class="rezia_exe_win" role="alertdialog" aria-labelledby="rezia_exe_title">
+      <div class="rezia_exe_bar"><span id="rezia_exe_title">Rezia.exe</span><button type="button" id="rezia_exe_x"
+          aria-label="Tutup">✕</button></div>
+      <div class="rezia_exe_body">
+        <div class="rezia_exe_icon">⚠</div>
+        <div>
+          <p><b>Rezia.exe has stopped working</b></p>
+          <p id="rezia_exe_msg">Terlalu banyak meme terdeteksi. Skill issue ditemukan di 3 file.</p>
+        </div>
+      </div>
+      <div class="rezia_exe_actions">
+        <button type="button" id="rezia_exe_retry" class="rezia_exe_btn">Coba Lagi</button>
+        <button type="button" id="rezia_exe_ok" class="rezia_exe_btn">Tutup Program</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
